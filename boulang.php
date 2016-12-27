@@ -4,7 +4,7 @@ $s=$_POST["argent"]*100;
 
 for($i=0; $i<count($e); $i++){
 
-		  $m=intval($s/$e[$i]);
+		  $m=floor($s/$e[$i]);
   		$s= $s - ($e[$i]*$m);
 
      echo "On rend " . $m . " espèces de " . $e[$i]/100 . "<br>";
